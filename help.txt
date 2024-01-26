@@ -1,0 +1,32 @@
+### /!\ Toujours rejeter le message reçu après chaque commande pour garder le canal lisible pour vous
+
+- **/add_task(name, priority, responsable, deadline, description)**
+  - **name:** le nom de la tâche (*Obligatoire*)
+  - **priority:** niveau de priorité de la tâche (*Obligatoire*)
+  - **responsable:** @nom de la personne chargée de la tâche (*Optionnel*)
+  - **deadline:** deadline de la tâche au format JJ/MM/AAAA (*Optionnel*)
+  - **description:** description de la tâche (*Optionnel*)
+
+- **/modif(id, name, value)**
+  - **id:** id de la tâche (*Obligatoire*)
+  - **name:** nom de l'attribut à modifier (*Obligatoire*)
+  - **value:** nouvelle valeur de l'attribut (*Obligatoire*)
+
+- **/set_state(id, value)**
+  - **id:** id de la tâche (*Obligatoire*)
+  - **value:** nouvelle valeur de l'attribut state
+
+- **/set_priority(id, value)**
+  - **id:** id de la tâche (*Obligatoire*)
+  - **value:** nouvelle valeur de l'attribut priority
+
+- **/suppr_task(id)**
+  - **id:** id de la tâche à supprimer (*Obligatoire*)
+
+- **/show_task(id)**
+  - **id:** id de la tâche à afficher (*Obligatoire*)
+
+- **/task_help()**
+  - *Affiche toutes les commandes*
+
+### /!\ ne pas utiliser /update et /setup
